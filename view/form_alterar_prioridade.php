@@ -17,12 +17,6 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../css/pedido.html">Criar novo chamado</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tela_inicial.html">Chamados</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="index.html" >Sair</a>
               </li>
             </ul>
