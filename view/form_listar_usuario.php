@@ -31,6 +31,7 @@
       </nav>
 </header>
 <body>
+<h2 style="text-align: center;">Lista de Usuarios</h2>
     <table class="table">
         <thead>
           <tr>

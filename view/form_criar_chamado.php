@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/chamado.css" media="screen" />
     <title>Document</title>
 </head>
 <header>
@@ -25,6 +25,8 @@
   </nav>
 </header>
 <body>
+<h2 style="text-align: center;">Cadastrado de Chamado</h2>
+<div class="form">
   <form action="../controller/inserir_chamado.php" method="post">
     <div class="mb-3">
       <label for="" class="form-label">Titulo do Chamado</label>
@@ -105,8 +107,13 @@
       <label for="" class="form-label">Data</label>
       <input type="date" class="form-control" id="data" name="data" aria-describedby="">
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="botao" style="text-align: center;">
+    <button type="submit" class="btn btn-primary" id="botao">Enviar</button>
+          </div> 
   </form>
-  <a href="form_listar_chamado.php"><button type="" class="btn btn-danger"> Voltar </button></a>
+          </div>
+  <div style="text-align: center;">
+  <a href="form_listar_chamado.php"><button type="" class="btn btn-danger" id="botao1"> Voltar </button></a>
+          </div>
 </body>
 </html>

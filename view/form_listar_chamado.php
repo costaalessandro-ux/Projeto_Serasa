@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/tela_inicial.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/listaChamado.css" media="screen" />
     <title>Document</title>
     <script lang="javascript">
             function excluir(codChamado, nome) {
@@ -37,7 +37,9 @@
       </nav>
 </header>
 <body>
-    <table class="table">
+<h2 style="text-align: center;">Historico de Chamados</h2>
+<div id="form">
+    <table>
         <thead>
           <tr>
             <th scope="col">Chamado</th>
@@ -76,6 +78,9 @@
         ?>
         </tbody>
       </table>
+      <div style="text-align: center;">
       <a href="form_criar_chamado.php"><button type="submit" class="btn btn-primary"> Criar novo Chamado </button></a>
-</body>
+          </div>
+          </div>
+    </body>
 </html>

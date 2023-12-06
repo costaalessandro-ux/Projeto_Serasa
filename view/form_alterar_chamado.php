@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/alteraChamado.css" media="screen" />
     <title>Document</title>
 </head>
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Sistema O.S</a>
+      <a class="navbar-brand" href="form_listar_chamado.php">Sistema O.S</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="pedido.html">Criar novo chamado</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tela_inicial.html">Chamados</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html" >Sair</a>
           </li>
@@ -120,8 +114,12 @@
             ?>
           </select>
 <br><br>
-    <button type="submit" class="btn btn-primary">Voltar</button>
-    <a href="#" onclick="alterar(<?= $c->codChamado ?>, '<?= $c->nome ?>')"><button type="submit" class="btn btn-primary">Enviar</button></a>
+<div style="text-align: center;">
+    <a href="#" onclick="alterar(<?= $c->codChamado ?>, '<?= $c->nome ?>')" style="text-align: center;"><button type="submit" class="btn btn-primary" id="botao">Enviar</button></a>
+          </div>      
   </form>
+  <div style="text-align: center;">
+  <a href="form_listar_chamado.php"  style="text-align: center;"><button type="submit" class="btn btn-danger" id="botao1">Voltar</button>
+          </div>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/tela_inicial.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/usuario.css" media="screen" />
     <title>Document</title>
 </head>
 <header>
@@ -17,7 +17,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html" >Sair</a>
+                <a class="nav-link" href="index.html">Sair</a>
               </li>
             </ul>
           </div>
@@ -25,6 +25,8 @@
       </nav>
 </header>
 <body>
+  <h2 style="text-align: center;">Cadastrado de Usuário</h2>
+<div class="form">
 <form action="../controller/inserir_usuario.php" method="POST">
     <div class="mb-3">
       <label for="" class="form-label">Nome do Usuario</label>
@@ -58,8 +60,10 @@
         ?>
 </select>
     <br>
-    <br>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+<div style="text-align: center;">
+    <button type="submit" class="btn btn-primary" id="botao">Enviar</button>
+          </div>
   </form>
+          </div>
 </body>
 </html>
